@@ -31,5 +31,16 @@ values (0127,'tinte',3.75,9)
 
 select * from productos
 
+select * from productos
+where nombre like 'Q'
+
+select * from productos
+where descripcion is null
+
+select * from productos
+where precio
+between '2' and '3'
+
+
 
 

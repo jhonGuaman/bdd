@@ -38,3 +38,11 @@ values ('04563','17244','2024-09-23',876.34)
 insert into cuentas(numero_cuenta,cedula_propietario,fecha_creacion,saldo)
 values ('04564','10944','2024-09-24',120)
 
+SELECT numero_cuenta, saldo
+FROM cuentas
+
+select *from cuentas
+where fecha_creacion between '2024-07-01' and '2024-10-01'
+
+select numero_cuenta, saldo from cuentas
+where fecha_creacion between '2024-07-01' and '2024-10-01'

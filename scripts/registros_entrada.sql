@@ -38,4 +38,12 @@ values (7662,'0602706665','2024-09-24','11:40')
 insert into registros_entrada(codigo_registro,cedula_empleado,fecha,hora)
 values (7663,'0602706987','2024-09-24','11:50')
 
+select cedula_empleado, fecha, hora  from registros_entrada
+
 select * from registros_entrada
+where hora
+between '7:00' and '14:00'
+
+select * from registros_entrada
+where hora > '8:00'
+
