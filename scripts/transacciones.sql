@@ -45,3 +45,8 @@ update transacciones set tipo='T'
 where monto >'100' and monto < '500'
 and extract(month from fecha)='9'
 and hora between'14:00' and '20:00'
+
+delete from transacciones
+where hora between '14:00' and '18:00'
+and extract(month from fecha)='8'
+and extract (year from fecha)=extract(year from current_date)
