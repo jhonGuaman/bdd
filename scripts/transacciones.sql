@@ -40,3 +40,8 @@ between '200' and '2000'
 
 select codigo, monto, tipo, fecha from transacciones
 where fecha is not null
+
+update transacciones set tipo='T'
+where monto >'100' and monto < '500'
+and extract(month from fecha)='9'
+and hora between'14:00' and '20:00'

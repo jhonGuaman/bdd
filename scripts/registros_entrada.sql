@@ -47,3 +47,10 @@ between '7:00' and '14:00'
 select * from registros_entrada
 where hora > '8:00'
 
+insert into registros_entrada (codigo_registro, cedula_empleado, fecha, hora)
+values (7664, '0602706987', '2024-08-15', '10:30');
+
+update registros_entrada set cedula_empleado = '082345679'
+where extract (month from fecha) = 8;
+
+
