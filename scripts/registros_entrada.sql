@@ -56,4 +56,15 @@ where extract (month from fecha) = 8
 delete from registros_entrada
 where extract (month from fecha) = 7
 
+select * from registros_entrada
+where extract(month from fecha)=9 or cedula_empleado like '17%'
+
+select * from registros_entrada
+where extract(month from fecha)=8
+and cedula_empleado like '1%'
+and hora between '08:00' and '12:00'
+
+select * from registros_entrada
+where (extract(month from fecha)=8 and cedula_empleado like '17%' and hora between '08:00' and '12:00')
+or (extract(month from fecha)= 9 and cedula_empleado like '08%' and hora between '09:00' and '13:00')
 

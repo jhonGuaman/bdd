@@ -47,5 +47,16 @@ where descripcion is null
 delete from productos
 where descripcion is null
 
+select * from productos
+where stock = '10' and precio < '10'
+
+select nombre, stock from productos
+where nombre like '%m%' or descripcion like '% %' 
+
+select nombre from productos
+where descripcion is null and stock = 0
+
+
+
 
 
