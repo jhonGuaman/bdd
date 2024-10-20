@@ -4,11 +4,7 @@ INNER JOIN usuario us ON cu.numero_cuenta = us.cuenta_numero_cuenta
 WHERE cu.saldo > '100'::money 
 AND cu.saldo < '1000'::money;
 
-SELECT cu.numero_cuenta, us.nombre 
-FROM cuentas cu
-INNER JOIN usuario us ON cu.numero_cuenta = us.cuenta_numero_cuenta
-WHERE cu.saldo > '100'::money 
-AND cu.saldo < '1000'::money;
+
 
 SELECT *
 FROM cuentas cu
